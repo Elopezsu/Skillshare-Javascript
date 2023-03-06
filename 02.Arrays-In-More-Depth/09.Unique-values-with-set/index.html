@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Unique Values With Set</title>
+  </head>
+
+  <body>
+    <h1 id="title">Unique Values With Set</h1>
+    <script>
+      let categories = [
+        'bags',
+        'shoes',
+        'shirts',
+        'ties',
+        'jackets',
+        'hats',
+        'bags',
+      ];
+
+      //Creamos un nuevo set que clonó el array de categorías
+      //y removió los duplicados (bags)
+      let uniqueCategories = new Set(categories);
+      //uniqueCategories.add('jeans');//
+      //add no permite añadir valores iguales. Ejemplo:
+      //Si fueramos a agregar hats nuevamente, no dejaría
+      
+      //Usamos delete para remover un valor
+      //uniqueCategories.delete('hats');
+
+      //clear borra todos los valores
+      //uniqueCategories.clear();
+
+      //El has dentro de una variable nos da valores
+      //de tru or false
+      //const hasShoes = uniqueCategories.has('shoes');
+      //console.log(hasShoes);
+
+      //Set es útil si no queremos ningún valor duplicado
+      //dentro del array
+      console.log(uniqueCategories.size);
+
+    </script>
+  </body>
+</html>

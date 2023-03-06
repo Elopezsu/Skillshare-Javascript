@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Iteration Methods</title>
+  </head>
+
+  <body>
+    <h1 id="title">Iteration Methods</h1>
+    <script>
+      // admin = full access & permissions
+      // author = can publish & manage their own posts
+      // subscriber = can only manage their own profile
+      
+      /*Example 1 - very manual
+      let roles = ['admin', 'author', 'subscriber'];
+      function canPublish(role) {
+        return role === 'admin' || role === 'author';
+      }
+      console.log(canPublish('subscriber'));*/
+
+      /*Example with a function más automatizada
+      let roles = ['moderator', 'guest', 'subscriber'];
+      const canPublish = roles.some(function (role) {
+      return role === 'admin' || role === 'author';
+      })
+      console.log(canPublish);*/
+
+      let users = [
+        {
+          user: 1, 
+          role: 'admin',
+        },
+        {
+          user: 2, 
+          role: 'author',
+        },
+        {
+          user: 3, 
+          role: 'author',
+        },
+        {
+          user: 4, 
+          role: 'subscriber',
+        },
+      ];
+
+     /*findIndex Example
+     const index = users.findIndex(function(user) {
+      return user.role === 'subscriber';
+     });
+
+     console.log(index);*/
+     
+    /*Usando find - nos da el primer match del array
+     const author = users.find(function(user) {
+      return user.role === 'author';
+     });
+
+     console.log(author);*/
+
+     /*Using filter - nos da ambas opciones de autor
+     existentes
+     const authors = users.filter(function(user) {
+      return user.role === 'author';
+     });
+
+     console.log(authors);*/
+
+     const authors = users.filter((user) => user.role === 'author');
+      console.log(authors);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Returning New Values</title>
+  </head>
+
+  <body>
+    <h1 id="title">Returning New Values</h1>
+    <script>
+      
+      /*How to use .join
+      let pizza = ['dough', 'sauce', 'cheese'];
+      //const isIncluded = pizza.includes('dough');
+      const string = pizza.join(' - ');
+      console.log(pizza, string);*/
+
+      /*Usamos indexOf para encontrar la ubicación del objecto
+      let pizza = ['dough', 'sauce', 'cheese'];
+      const index = pizza.indexOf('cheese');
+      console.log(pizza, index);*/
+
+      /*Lo que hace lastIndexOf es que nos da la última 
+      ubicación del objeto
+      let pizza = ['cheese','dough', 'cheese', 'sauce'];
+      const index = pizza.lastIndexOf('cheese');
+      console.log(pizza, index);*/
+
+      /*Slice example
+      let pizza = ['cheese','dough', 'cheese', 'sauce'];
+      const value = pizza.slice(1, 3);
+      console.log(pizza, value);*/
+
+
+      let pizza = ['cheese','dough', 'cheese', 'sauce'];
+      let extras = ['peppers', 'onions', ]
+      const newPizza = pizza.concat(extras);
+      console.log(pizza, newPizza);
+
+    </script>
+  </body>
+</html>

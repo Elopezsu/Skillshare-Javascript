@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Array Constructor</title>
+  </head>
+
+  <body>
+    <h1 id="title">The Array Constructor</h1>
+    <script>
+      // Array Literal
+      let pizza = ['dough', 'pepperoni', 'cheese', 'sauce'];
+
+      // We verified through this console.log(typeof pizza);
+      //that pizza is an object
+
+
+      //Array Constructor
+      /*Ejemplo 1
+      const ingredients = new Array('dough','cheese')
+      console.log(ingredients);*/
+
+      const ingredients = new Array(5);
+      
+
+      //We use splice to remove values
+      //2 is the index, 1 is the # of values to remove.
+      //The third value is to add a new value in the position
+      //of the index we removed
+     // ingredients.splice(2, 1, 'onions');
+
+      //Example to add a value at the end of the array
+      //ingredients.push('peppers');
+      console.log(ingredients);
+
+    </script>
+  </body>
+</html>

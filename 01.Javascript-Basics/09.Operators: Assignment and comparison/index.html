@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Operators</title>
+</head>
+
+<body>
+
+  <h1 id="title">Operators: Assignment & comparison</h1>
+  <script>
+    // ASSIGNMENT OPERATORS
+    // =, +=, -+, *=, /=, %=
+    const forename = 'Chris'
+    const surname = 'Dixon'
+    let number1 = 5;
+    let number2 = 5;
+
+    // let newNumber = number1 + number2
+    // Puedo sustituir el de arriba 
+    //por este= number1 += number2
+    //el valor del number2 se añade automáticamente
+    //al number 1
+    //document.getElementById('title').innerText = number1;
+    //Sucede igual si usamos - para restar
+    //Igual si queremos multiplicar con *
+    //Si queremos dividir usamos /
+
+    //document.getElementById('title').innerText = forename;
+    //document.getElementById('title').innerText += ' ' +  surname;
+
+    //const result = number1 === number2;
+    const result = number1 >= number2;
+    document.getElementById('title').innerText = result;
+
+    // COMPARISON OPERATORS
+    // ==, !=, ===, !==, >, >=, <, <=
+    /*Con doble == solo chequea los values, no data equals
+    es decir, si es un string o number y son iguales
+    va a ser true*/
+    /*En cambio si queremos comparar valores estrictamente
+    iguales usamos los tres iguales ===, es decir, comparar
+    value y data type*/
+    /*Con !== nos da el opuesto */
+
+  </script>
+</body>
+
+</html>

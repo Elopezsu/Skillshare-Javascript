@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Operators: Logical & arithmetic</title>
+</head>
+
+<body>
+
+  <h1 id="title">Operators: Logical & arithmetic</h1>
+  <script>
+    // ARITHMETIC OPERATORS
+    // +, -, *, /, %, ++, --
+    const forename = 'Chris'
+    const surname = 'Dixon'
+    let number1 = 15;
+    let number2 = 5;
+
+    /*Example 1
+    const result = number1 + number2; // result = 20
+    document.getElementById('title').innerText = result;
+    console.log(forename + ' ' + surname);*/
+
+    /*Example 2
+    Funcioa igual para restar, multiplicar,
+    dividir y hallar el remainder (funciona igual a la suma como
+    está arriba)
+    const result = number1 % number2; // result = 20
+    document.getElementById('title').innerText = result;
+    console.log(forename + ' ' + surname)*/
+
+    /*Example 3
+    let result = number1 * number2; // result = 20
+    result--;
+    result--;
+    document.getElementById('title').innerText = result;
+    console.log(forename + ' ' + surname)*/
+
+    // LOGICAL OPERATORS
+    // &&, ||, !
+
+    //=== type and value// 
+    let result = number1 === 15 || number2 === 4;
+    document.getElementById('title').innerText = !result;
+  
+
+  </script>
+</body>
+
+</html>

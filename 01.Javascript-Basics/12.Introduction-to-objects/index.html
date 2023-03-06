@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction To Objects</title>
+  </head>
+
+  <body>
+    <h1 id="title">Introduction To Objects</h1>
+    <script>
+
+     /* Podemos usarlo así
+     let user = {
+          first: 'Chris',
+          last: 'Dixon',
+          occupation: 'web developer',
+          loggedIn: true,
+          foods: ['pizza', 'mexican', 'indian' ],
+
+        document.getElementById('title').innerText = user['occupation'];
+        console.table(user);
+        }*/
+        //Podemos acceder a la info con brackets y con punto
+        //También. Ejemplo= user.first
+      
+
+      let users = [
+        {first: 'Chris', last: 'Dixon'},
+        {first: 'Elon', last: 'Musk'},
+
+      ]
+
+      document.getElementById('title').innerText = users[].first;
+      
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comments, semicolons and ASI</title>
+</head>
+
+<body>
+
+  <h1 id="title">Comments, semicolons and ASI</h1>
+  <script>
+    /*const name = 'Chris'
+    const learningJavascript =  true
+    console.log(name, learningJavascript);First Example,
+    creating separate varibles*/
+
+    /*const name = 'Chris'; 
+    const learningJavascript =  true
+    console.log(name, learningJavascript)  Ejemplo 2*/
+    /*Intentamos agregar las dos variables juntas y dio un error.
+    Se recomienda añadir ; entre ambas siempre*/
+
+    const name = 'Chris';
+    const learningJavascript = true;
+    let score = 97.34;
+    const damage = 10.42;
+    console.log((score - damage).toPrecision(2));
+    /*Intentamos remover el console.log y no funcionó.
+    Debemos usarlo, al igual que doble () cuando
+    ya hay () existentes.
+    toPrecision redondea los valores a dos decimales*/
+
+  </script>
+</body>
+
+</html>

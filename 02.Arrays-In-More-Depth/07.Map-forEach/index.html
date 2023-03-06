@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Map & forEach</title>
+  </head>
+
+  <body>
+    <h1 id="title">Map & forEach</h1>
+    <script>
+      let numbers = [72, 33, 108, 222, 6];
+      let posts = [
+        { title: 'How to learn Javascript', body: 'bla bla bla' },
+        { title: 'How to be a ninja', body: 'bla bla bla' },
+        { title: 'How to be a ninja part 2', body: 'bla bla bla' },
+      ];
+
+      /*Example para usar index y multiplicación
+      numbers.forEach((number, index) => 
+      console.log(`number ${index + 1}: ${number * 2}`));*/
+
+        /*Llama al array tres veces y los pasa a mayúsculas
+        posts.forEach((post) => console.log(post.title.toUpperCase()));
+        */
+
+        //Da el mismo valor que el de arriba con forEach
+        /*
+        posts.map((post) => console.log(post.title.toUpperCase()));*/
+
+        /*con for Each nos da un valor undefined en la consola, porque
+        modificamos el array original
+        const newPosts = posts.forEach((post) => post.title.toUpperCase());
+        console.log(newPosts);*/
+
+
+        /*con map dejamos el array intacto. También podemos chain 
+        varios métodos
+        const newPosts = posts.map((post) => post.title.toUpperCase());
+        console.log(newPosts);*/
+
+        /*Puedo usar filter para que me arroje un array en particular
+        const newPosts = posts
+        
+        .map((post) => post.title.toUpperCase())
+        .filter((value) => value === 'HOW TO BE A NINJA PART 2');
+        console.log(newPosts);*/
+
+        /*some me arroja si es true or false, si existe o no un array
+        con ese nombre
+        const newPosts = posts
+        
+        .map((post) => post.title.toUpperCase())
+        .some((value) => value === 'HOW TO BE A NINJA PART 34');
+        console.log(newPosts);*/
+
+        /* con findIndex, me arroja la posición de la propiedad
+        const newPosts = posts
+        
+        .map((post) => post.title.toUpperCase())
+        .findIndex((value) => value === 'HOW TO BE A NINJA PART 2');
+        console.log(newPosts);*/
+
+        //Recuerda que todas estas opciones se pueden usar con map
+        //pero no con forEach
+
+    </script>
+  </body>
+</html>

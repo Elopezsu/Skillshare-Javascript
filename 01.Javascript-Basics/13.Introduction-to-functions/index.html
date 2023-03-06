@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction To Functions</title>
+  </head>
+
+  <body>
+    <h1 id="title">Introduction To Functions</h1>
+    <script>
+    
+      //const dogAge = 3
+
+      /*function dogToHuman(dogAge){
+        const humanEquiv = dogAge * 7
+        return humanEquiv;
+      }
+
+        const result = dogToHuman(5);
+        console.log(`My dog is aged ${result} in human years`)*/
+
+        let bread = ['flour', 'yeast', 'salt', 'water'];
+        let brownies = ['butter', 'chocolate', 'flour', 'eggs', 'sugar'];
+
+        /*function checkAllergies(recipe, ingredient){
+          recipe.includes(ingredient)
+          bread.includes('flour')
+
+        }*/
+
+        function checkAllergies(recipe, ingredient){
+          const hasIngredient = recipe.includes(ingredient)
+          return hasIngredient
+        }
+
+        console.log(checkAllergies(brownies, 'eggs'));
+    </script>
+  </body>
+</html>

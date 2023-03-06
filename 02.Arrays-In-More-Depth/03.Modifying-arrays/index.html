@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modifying Arrays</title>
+  </head>
+
+  <body>
+    <h1 id="title">Modifying Arrays</h1>
+    <script>
+      /*Ejemplo antes de agregar la variable
+      let pizza = ['dough', 'sauce', 'cheese'];
+      pizza.push('pepperoni');
+      console.log(pizza);*/
+
+      //let pizza = ['dough', 'sauce', 'cheese'];
+      //const returned = pizza.push('pepperoni'); Retuned
+      //me devuelve el num de items después de haber aplicado
+      //la función
+      //const returned = pizza.pop();
+      //console.log(returned);
+      //pizza.splice(1,1, 'bbq sauce', 'peppers');
+
+      /*Toma en cuenta que con núms no funciona bien, sino
+      que los transforma a strings y toma el valor menor y lo pone de primero
+      Ejemplo: 1000, 12, 3
+      let numbers = [12, 1000, 3];
+      numbers.sort()
+      console.log(numbers);*/
+
+      let numbers = [12, 1000, 3];
+      //numbers.sort(function sort(a, b) {
+      //  return a  - b;
+      //});
+        numbers.reverse();
+        console.log(numbers);
+
+    </script>
+  </body>
+</html>
